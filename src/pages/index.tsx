@@ -1,29 +1,44 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import { ExtLink } from '../components/Shared';
+import { Container } from '../components/Shared';
 
 const OPENSEA_API_URL =
 	'https://api.opensea.io/collection/poolsuite-executive-member';
 
-const HomePage: React.FC = ({ collection }: any) => {
-	console.log('poolsuite collection:', collection);
-	console.log('pool stats:', collection.stats);
+interface HomePageProps {
+	poolData: any; // 🌴 TODO: make PoolData interface 🌴
+}
+
+const HomePage: React.FC<HomePageProps> = ({ poolData }) => {
+	console.log('poolData', poolData);
 
 	return (
 		<Layout title="poolstats">
-			<h1>poolstats</h1>
-			<small>
-				by <ExtLink href="https://github.com/zhoug0x">zhoug</ExtLink>{' '}
-			</small>
+			<Container>
+				<pre>{JSON.stringify(poolData, undefined, 2)}</pre>
+			</Container>
 		</Layout>
 	);
 };
 
 export const getStaticProps = async () => {
 	try {
-		const data = await fetch(OPENSEA_API_URL).then(res => res.json());
-		return { props: data };
+		const result = await fetch(OPENSEA_API_URL).then(res => res.json());
+		const {
+			collection: { stats },
+		} = result;
+
+		if (stats) {
+			const props = {
+				poolData: stats,
+			};
+
+			return { props };
+		}
+
+		console.log('no stats data');
+		return { props: {} };
 	} catch (error) {
 		console.error(error);
 	}

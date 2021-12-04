@@ -8,5 +8,11 @@ declare module 'styled-components' {
 			link: string;
 			background: string;
 		};
+		breakpoints: {
+			sm: number;
+			md: number;
+			lg: number;
+			xl: number;
+		};
 	}
 }

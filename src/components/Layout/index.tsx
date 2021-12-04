@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 
 import * as S from './styled';
+import Header from './Header';
+import Footer from './Footer';
 
 interface LayoutProps {
 	title: string;
@@ -9,12 +11,14 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ title, children }) => {
 	return (
-		<S.Container>
+		<S.PageWrapper>
 			<Head>
 				<title>{title}</title>
 			</Head>
-			{children}
-		</S.Container>
+			<Header />
+			<main className="page-content">{children}</main>
+			<Footer />
+		</S.PageWrapper>
 	);
 };
 
