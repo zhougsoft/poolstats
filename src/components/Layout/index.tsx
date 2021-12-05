@@ -12,6 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ title, children }) => {
 	return (
 		<S.PageWrapper>
 			<Head>
+				<link rel="shortcut icon" href="/favicon.ico" />
 				<title>{title}</title>
 			</Head>
 			<Header />

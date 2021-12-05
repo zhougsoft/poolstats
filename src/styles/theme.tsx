@@ -2,6 +2,11 @@ import { DefaultTheme } from 'styled-components';
 
 // Update 'DefaultTheme' interface in 'styled.d.ts' when adding new props!
 const theme: DefaultTheme = {
+	fonts: {
+		main: 'sans-serif',
+		secondary: 'serif',
+		monospace: 'monospace',
+	},
 	colors: {
 		text: '#333',
 		lightText: '#555',

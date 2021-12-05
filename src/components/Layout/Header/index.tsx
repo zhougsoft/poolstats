@@ -9,6 +9,7 @@ const Header: React.FC = () => {
 			<S.HeaderTitle>
 				<S.Title>
 					<h1>poolstats</h1>
+					<br />
 					<DecorEmoji className="title-decor">🍹🌴🦩🍸</DecorEmoji>
 					<span className="twitter-link">
 						by <ExtLink href="https://twitter.com/zhoug0x">zhoug</ExtLink>{' '}
@@ -35,13 +36,13 @@ const Header: React.FC = () => {
 							&trade; Executive Membership
 						</em>
 					</strong>{' '}
-					<DecorEmoji>🦩</DecorEmoji>
+					<DecorEmoji>💳</DecorEmoji>
 				</p>
 				<p>
+					<em>Using the power of state-of-the-art HTTP technology...</em>
+					<br />
 					<em>Refresh</em> your Internet-connected Web Browser to get real-time
-					price updates, <br />
-					<em>that's the power of HTTP technology!</em>{' '}
-					<DecorEmoji>🖱️</DecorEmoji>
+					price quotes, online! <DecorEmoji>🖱️</DecorEmoji>
 				</p>
 			</S.SubHeading>
 

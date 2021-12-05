@@ -7,13 +7,15 @@ export const Wrapper = styled.div<{ fontSize: string }>`
 
 export const Label = styled.div`
 	font-size: 0.4em;
-	margin-bottom: 0.25rem;
 	font-style: italic;
+	letter-spacing: -0.02em;
+	margin-bottom: 0.25rem;
 `;
 
 export const Value = styled.div`
 	display: flex;
 	align-items: center;
+	font-family: ${({theme}) => theme.fonts.monospace};
 `;
 
 export const Symbol = styled.div`
