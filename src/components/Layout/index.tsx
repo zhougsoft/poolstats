@@ -3,7 +3,6 @@ import Head from 'next/head';
 
 import * as S from './styled';
 import Header from './Header';
-import Footer from './Footer';
 
 interface LayoutProps {
 	title: string;
@@ -17,7 +16,6 @@ const Layout: React.FC<LayoutProps> = ({ title, children }) => {
 			</Head>
 			<Header />
 			<main className="page-content">{children}</main>
-			<Footer />
 		</S.PageWrapper>
 	);
 };

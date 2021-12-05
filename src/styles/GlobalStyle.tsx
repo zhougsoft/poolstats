@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
+	html, body {
+		width: 100%;
+	}
+
 	body {
 		font-size: 16px;
 		font-family: sans-serif;
