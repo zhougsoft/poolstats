@@ -90,7 +90,7 @@ const HomePage: React.FC<HomePageProps> = ({ poolData }) => {
 	);
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	try {
 		const result = await fetch(OPENSEA_API_URL).then(res => res.json());
 		const {
