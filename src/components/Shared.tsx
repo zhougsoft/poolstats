@@ -7,7 +7,7 @@ export const ExtLink: React.FC<any> = ({ children, ...props }) => (
 );
 
 export const Container = styled.div`
-	width: 100%;
+	max-width: 100%;
 	padding-right: 2rem;
 	padding-left: 2rem;
 	margin-right: auto;
@@ -54,3 +54,7 @@ export const GithubIcon: React.FC<{ width?: string; color?: string }> = ({
 		></path>
 	</svg>
 );
+
+export const PageBreak = styled.hr`
+	margin: 1rem 0;
+`;

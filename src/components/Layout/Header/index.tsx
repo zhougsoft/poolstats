@@ -1,11 +1,11 @@
 import React from 'react';
 
 import * as S from './styled';
-import { Container, DecorEmoji, ExtLink, GithubIcon } from '../../Shared';
+import { DecorEmoji, ExtLink, GithubIcon } from '../../Shared';
 
 const Header: React.FC = () => {
 	return (
-		<Container>
+		<>
 			<S.HeaderTitle>
 				<S.Title>
 					<h1>poolstats</h1>
@@ -36,18 +36,19 @@ const Header: React.FC = () => {
 							&trade; Executive Membership
 						</em>
 					</strong>{' '}
-					<DecorEmoji>💳</DecorEmoji>
+					<DecorEmoji>💳🍸</DecorEmoji>
 				</p>
 				<p>
+					<DecorEmoji>🖱️</DecorEmoji>{' '}
 					<em>Using the power of state-of-the-art HTTP technology...</em>
 					<br />
 					<em>Refresh</em> your Internet-connected Web Browser to get real-time
-					price quotes, online! <DecorEmoji>🖱️</DecorEmoji>
+					price quotes, online!
 				</p>
 			</S.SubHeading>
 
 			<hr />
-		</Container>
+		</>
 	);
 };
 
