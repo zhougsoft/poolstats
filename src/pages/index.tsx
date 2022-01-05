@@ -25,7 +25,7 @@ const HomePage: React.FC<HomePageProps> = ({ poolData }) => {
 				label="💳 membership floor price"
 				value={floor_price?.toFixed(3)}
 				symbol={'Ξ'}
-				fontSize="6rem"
+				fontSize="6.5rem"
 			/>
 
 			<PageBreak />
@@ -48,7 +48,7 @@ const HomePage: React.FC<HomePageProps> = ({ poolData }) => {
 
 						<FigureDisplay
 							label="% of unique members"
-							value={`${(num_owners / total_supply) * 100}`}
+							value={`${((num_owners / total_supply) * 100).toFixed(2)}`}
 							symbol={'%'}
 							fontSize="2rem"
 						/>
@@ -57,13 +57,18 @@ const HomePage: React.FC<HomePageProps> = ({ poolData }) => {
 					<></>
 				)}
 			</FigureReport>
-			<p style={{ fontSize: '0.75rem', margin: '2rem 0' }}>
+			<p
+				style={{ fontSize: '0.75rem', margin: '2rem 0', lineHeight: '0.5rem' }}
+			>
 				<DecorEmoji>💡</DecorEmoji>
 				<em>
 					<strong>Interested in becoming a member?</strong>
 				</em>
-				<br />
-				<ExtLink>Hyperlink to the Open Sea&trade;</ExtLink>
+				<p>
+					<ExtLink style={{ marginLeft: '1rem' }}>
+						Hyperlink to the Open Sea&trade;
+					</ExtLink>
+				</p>
 			</p>
 		</Layout>
 	);

@@ -56,5 +56,5 @@ export const GithubIcon: React.FC<{ width?: string; color?: string }> = ({
 );
 
 export const PageBreak = styled.hr`
-	margin: 1rem 0;
+	margin: 2rem 0;
 `;

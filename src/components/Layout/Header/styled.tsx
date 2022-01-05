@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.header`
+export const HeaderWrapper = styled.header`
+	margin-bottom: 2rem;
+
 	.github-link {
 		align-self: flex-end;
 		font-size: 1.5em;

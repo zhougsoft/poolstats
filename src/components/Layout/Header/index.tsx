@@ -5,7 +5,7 @@ import { DecorEmoji, ExtLink, GithubIcon } from '../../Shared';
 
 const Header: React.FC = () => {
 	return (
-		<>
+		<S.HeaderWrapper>
 			<S.HeaderTitle>
 				<S.Title>
 					<h1>poolstats</h1>
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
 			</S.SubHeading>
 
 			<hr />
-		</>
+		</S.HeaderWrapper>
 	);
 };
 
