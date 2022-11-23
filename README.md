@@ -1,8 +1,8 @@
 # 🍹🌴 poolstats 🦩🍸
 
-_Built w/ Next.js & TypeScript_
+> for both the business-minded executives, and the ones aspiring to be 🤝
 
-For both the business-minded executives, and the ones aspiring to be 🤝
+just something for fun to try out the OpenSea API
 
 ### run on local:
 
