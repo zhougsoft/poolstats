@@ -65,7 +65,7 @@ const HomePage: React.FC<HomePageProps> = ({ poolData }) => {
 					<strong>Interested in becoming a member?</strong>
 				</em>
 				<p>
-					<ExtLink style={{ marginLeft: '1rem' }}>
+					<ExtLink href="https://opensea.io/collection/poolsuite-executive-member" style={{ marginLeft: '1rem' }}>
 						Hyperlink to the Open Sea&trade;
 					</ExtLink>
 				</p>
